@@ -861,7 +861,7 @@ a {
 }
 
 .promo-visual {
-  background: url('img/Promo-visual.png') center/cover no-repeat;
+  background: url('./images/promo-visual.png') center/cover no-repeat;
   border-radius: 40px;
   min-height: 360px;
 }
@@ -897,7 +897,7 @@ a {
   min-height: 520px;
   border-radius: 40px;
   background: linear-gradient(135deg, rgba(255, 0, 127, 0.22), rgba(255, 212, 0, 0.22)),
-    url('img/Sobre.png') center/cover no-repeat;
+    url('./images/sobre.png') center/cover no-repeat;
 }
 
 

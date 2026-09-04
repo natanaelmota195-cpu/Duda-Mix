@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>DUDA MIX - Sorveteria</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div class="preloader" id="preloader">
+    <div class="brand-icon">🍦</div>
+    <p class="loading-text">
+      <span class="yellow">Carregando</span>
+      <span class="pink">delícias...</span>
+    </p>
+
+  </div>
+
+  <div class="cursor" id="cursor"></div>
+
+  <header class="navbar" id="navbar">
+    <div class="nav-inner container">
+      <a href="/" class="logo-link">
+        <img src="img/DUDAMIX-Página Inicial.png" alt="DUDA MIX - Página Inicial" class="logo">
+      </a>
+      <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false"
+        aria-controls="mobileMenu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="mobile-menu" id="mobileMenu">
+        <nav class="nav-links">
+          <a href="#menu">Cardápio</a>
+          <a href="#promo">Promoções</a>
+          <a href="#gallery">Galeria</a>
+          <a href="#about">Nossa História</a>
+          <a href="#contact">Contato</a>
+        </nav>
+        <a class="cta-nav" href="https://wa.me/5593984075238?text=Ola%2C%20gostaria%20de%20fazer%20um%20pedido."
+          target="_blank" rel="noopener noreferrer">Peça Já</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="hero">
+      <div class="hero-bg">
+        <!-- Vídeo do Hero: coloque seu arquivo em video/hero.mp4 (compressão recomendada 3-6MB) -->
+        <video class="hero-video" preload="metadata" autoplay muted loop playsinline poster="video/hero-poster.jpg"
+          aria-hidden="true">
+          <source src="kling_20260707_VIDEO_Crie_um_v__988_0.mp4" type="video/mp4" />
+          Seu navegador não suporta vídeo HTML5.
+        </video>
+
+        <div class="hero-video-overlay" aria-hidden="true"></div>
+
+        <div class="bubble bubble-1"></div>
+        <div class="bubble bubble-2"></div>
+        <div class="bubble bubble-3"></div>
+        <div class="blur-shape blur-1"></div>
+        <div class="blur-shape blur-2"></div>
+        <div class="sparkle sparkle-1"></div>
+        <div class="sparkle sparkle-2"></div>
+        <div class="drip drip-1"></div>
+        <div class="drip drip-2"></div>
+      </div>
+
+      <div class="hero-grid container">
+        <div class="hero-copy reveal-left" id="heroCopy">
+          <span class="eyebrow">Doces Lembranças</span>
+          <h1>Onde o sabor vira felicidade</h1>
+          <p>
+            Sabores artesanais preparados com ingredientes selecionados para transformar cada momento em uma experiência
+            inesquecível.
+          </p>
+          <div class="hero-buttons">
+            <a class="btn btn-primary" href="#menu">🍦 Conheça o Cardápio</a>
+            <a class="btn btn-secondary" href="#contact">📲 Fazer Pedido</a>
+          </div>
+
+        </div>
+
+        <div class="hero-media reveal-right" aria-hidden="true">
+          <!-- Espaço intencionalmente limpo: o vídeo é o foco do lado direito -->
+        </div>
+      </div>
+    </section>
+
+    <section class="menu section" id="menu">
+      <div class="section-head reveal-up">
+        <p>🍦 Cardápio</p>
+        <h2>Sabores que encantam a cada garfada</h2>
+      </div>
+      <div class="category-pill-row reveal-up">
+        <a class="btn btn-secondary btn-sm category-btn active" data-category="all" href="#menu"
+          aria-pressed="true">Todos</a>
+        <a class="btn btn-secondary btn-sm category-btn" data-category="sorvetes" href="#menu" aria-pressed="false">🍦
+          Sorvetes</a>
+        <a class="btn btn-secondary btn-sm category-btn" data-category="milkshakes" href="#menu" aria-pressed="false">🥤
+          Milk-shakes</a>
+        <a class="btn btn-secondary btn-sm category-btn" data-category="tacas" href="#menu"
+          aria-pressed="false">🍧Taças</a>
+        <a class="btn btn-secondary btn-sm category-btn" data-category="sundaes" href="#menu" aria-pressed="false">🍨
+          Sundaes</a>
+        <a class="btn btn-secondary btn-sm category-btn" data-category="sobremesas" href="#menu" aria-pressed="false">🍰
+          Sobremesas</a>
+        <a class="btn btn-secondary btn-sm category-btn" data-category="acai" href="#menu" aria-pressed="false">🫐
+          Açaí</a>
+      </div>
+
+      <div class="menu-grid">
+        <article class="menu-card reveal-scale" data-category="sorvetes">
+          <img src="img/sorvete-morango.jpg" alt="Sorvete de Morango" loading="lazy" />
+          <div class="menu-card-body">
+            <h3>Sorvete de Morango</h3>
+            <p>Creme de morango com pedaços de fruta fresca.</p>
+            <div class="menu-meta">
+              <span>R$ 28,90</span>
+              <a class="btn btn-sm" href="#contact">Pedir Agora</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="menu-card reveal-scale" data-category="sorvetes">
+          <img src="img/sorvete-morango-intenso.png" alt="Sorvete de Morango intenso" loading="lazy" />
+          <div class="menu-card-body">
+            <h3>Sorvete de Morango intenso</h3>
+            <p>Morango intenso, cremoso e encorpado.</p>
+            <div class="menu-meta">
+              <span>R$ 29,90</span>
+              <a class="btn btn-sm" href="#contact">Pedir Agora</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="menu-card reveal-scale" data-category="sorvetes">
+          <img src="img/Sorvete-Pistache.jpg" alt="Sorvete de Pistache" loading="lazy" />
+          <div class="menu-card-body">
+            <h3>Pistache</h3>
+            <p>Sabor delicado com pedaços de pistache torrado.</p>
+            <div class="menu-meta">
+              <span>R$ 32,00</span>
+              <a class="btn btn-sm" href="#contact">Pedir Agora</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="menu-card reveal-scale" data-category="sorvetes">
+          <img src="img/napolitano.png" alt="Napolitano" loading="lazy" />
+          <div class="menu-card-body">
+            <h3>Napolitano</h3>
+            <p>Trio clássico: chocolate, baunilha e morango.</p>
+            <div class="menu-meta">
+              <span>R$ 30,50</span>
+              <a class="btn btn-sm" href="#contact">Pedir Agora</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="menu-card reveal-scale" data-category="milkshakes">
+          <img src="img/Milkshake-Chocolate.png" alt="Milkshake Chocolate" loading="lazy" />
+          <div class="menu-card-body">
+            <h3>Milkshake Chocolate</h3>
+            <p>Delicioso milkshake com calda de chocolate e chantilly.</p>
+            <div class="menu-meta">
+              <span>R$ 24,50</span>
+              <a class="btn btn-sm" href="#contact">Pedir Agora</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="menu-card reveal-scale" data-category="milkshakes">
+          <img src="img/MILkshake -Caramelo.jpg" alt="Milkshake Caramelo" loading="lazy" />
+          <div class="menu-card-body">
+            <h3>Milkshake Caramelo</h3>
+            <p>Caramelo cremoso com toque salgado para balancear.</p>
+            <div class="menu-meta">
+              <span>R$ 25,00</span>
+              <a class="btn btn-sm" href="#contact">Pedir Agora</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="menu-card reveal-scale" data-category="milkshakes">
+          <img src="img/Milkshake-Oreo.jpg" alt="Milkshake Oreo" loading="lazy" />
+          <div class="menu-card-body">
+            <h3>Milkshake Oreo</h3>
+            <p>Clássico com pedaços crocantes de biscoito.</p>
+            <div class="menu-meta">
+              <span>R$ 26,00</span>
+              <a class="btn btn-sm" href="#contact">Pedir Agora</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="menu-card reveal-scale" data-category="tacas">
+          <img src="img/Taça-Baunilha.jpg" alt="Taça Baunilha" loading="lazy" />
+          <div class="menu-card-body">
+            <h3>Taça Baunilha</h3>
+            <p>Taça servida com calda e granulados crocantes.</p>
+            <div class="menu-meta">
+              <span>R$ 27,50</span>
+              <a class="btn btn-sm" href="#contact">Pedir Agora</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="menu-card reveal-scale" data-category="tacas">
+          <img src="img/Taça-Morango.jpg" alt="Taça Morango" loading="lazy" />
+          <div class="menu-card-body">
+            <h3>Taça Morango</h3>
+            <p>Camadas de sorvete e calda de morango.</p>
+            <div class="menu-meta">
+              <span>R$ 28,00</span>
+              <a class="btn btn-sm" href="#contact">Pedir Agora</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="menu-card reveal-scale" data-category="sundaes">
+          <img src="img/Sundae-Chocolate.jpg" alt="Sundae Chocolate" loading="lazy" />
+          <div class="menu-card-body">
+            <h3>Sundae Chocolate</h3>
+            <p>Sundae servido com calda quente e pedaços crocantes.</p>
+            <div class="menu-meta">
+              <span>R$ 31,90</span>
+              <a class="btn btn-sm" href="#contact">Pedir Agora</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="menu-card reveal-scale" data-category="sundaes">
+          <img src="img/Sundae-Morango.jpg" alt="Sundae Morango" loading="lazy" />
+          <div class="menu-card-body">
+            <h3>Sundae Morango</h3>
+            <p>Mix de morango fresco com chantilly e calda.</p>
+            <div class="menu-meta">
+              <span>R$ 31,90</span>
+              <a class="btn btn-sm" href="#contact">Pedir Agora</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="menu-card reveal-scale" data-category="sundaes">
+          <img src="img/Sundae-Maracuja.jpg" alt="Sundae Maracujá" loading="lazy" />
+          <div class="menu-card-body">
+            <h3>Sundae Maracujá</h3>
+            <p>Acidez tropical que contrasta com o doce do sorvete.</p>
+            <div class="menu-meta">
+              <span>R$ 32,50</span>
+              <a class="btn btn-sm" href="#contact">Pedir Agora</a>
+            </div>
+          </div>
+        </article>
+
+         <article class="menu-card reveal-scale" data-category="sobremesas">
+          <img src="img/Bolo-chocolate.jpg" alt="Bolo de Chocolate" loading="lazy" />
+          <div class="menu-card-body">
+            <h3>Bolo de Chocolate</h3>
+            <p>Bolo de chocolate fofinho com cobertura de chantilly.</p>
+            <div class="menu-meta">
+              <span>R$ 7,00</span>
+              <a class="btn btn-sm" href="#contact">Pedir Agora</a>
+            </div>
+          </div>
+        </article>
+
+         <article class="menu-card reveal-scale" data-category="sobremesas">
+          <img src="img/Bolo-pudim.png" alt="Bolo Pudim" loading="lazy" />
+          <div class="menu-card-body">
+            <h3>Bolo Pudim</h3>
+            <p>Bolo de pudim cremoso com bolo de chocolate.</p>
+            <div class="menu-meta">
+              <span>R$ 9,00</span>
+              <a class="btn btn-sm" href="#contact">Pedir Agora</a>
+            </div>
+          </div>
+        </article>
+
+         <article class="menu-card reveal-scale" data-category="sobremesas">
+          <img src="img/Petit-Gateau.jpg" alt="Petit Gâteau" loading="lazy" />
+          <div class="menu-card-body">
+            <h3>Petit Gâteau</h3>
+            <p>Petit gâteau delicioso com cobertura de chocolate.</p>
+            <div class="menu-meta">
+              <span>R$ 9,00</span>
+              <a class="btn btn-sm" href="#contact">Pedir Agora</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="menu-card reveal-scale" data-category="acai">
+          <img src="img/Açaí Gourmet.jpg" alt="Açaí" loading="lazy" />
+          <div class="menu-card-body">
+            <h3>Açaí Tradicional</h3>
+            <p>Açaí cremoso com bananas, granola e mel.</p>
+            <div class="menu-meta">
+              <span>R$ 26,00</span>
+              <a class="btn btn-sm" href="#contact">Pedir Agora</a>
+            </div>
+          </div>
+        </article>
+      </div>
+      <p class="menu-empty" hidden>Nenhum item encontrado nesta categoria.</p>
+    </section>
+
+    <section class="featured section" id="destaques">
+      <div class="section-head reveal-up">
+        <p>Destaques</p>
+        <h2>Sabores em destaque</h2>
+      </div>
+      <div class="react-grid">
+        <article class="featured-card reveal-right">
+          <img src="img/Sundae-Chocolate.jpg" alt="Sundae de Chocolate" loading="lazy" />
+          <div class="featured-info">
+            <span>Mais vendido</span>
+            <h3>Sundae Chocolate</h3>
+            <p>Sorvete cremoso com calda de chocolate quente e pedaços crocantes.</p>
+            <div class="featured-stars" aria-label="5 de 5 estrelas">★★★★★</div>
+          </div>
+        </article>
+        <article class="featured-card reveal-right">
+          <img src="img/Sundae-Morango.jpg" alt="Sundae de Morango" loading="lazy" />
+          <div class="featured-info">
+            <span>Favorito da casa</span>
+            <h3>Sundae Morango</h3>
+            <p>Mix de morango fresco, chantilly e uma deliciosa calda de morango.</p>
+            <div class="featured-stars" aria-label="5 de 5 estrelas">★★★★★</div>
+          </div>
+        </article>
+        <article class="featured-card reveal-right">
+          <img src="img/Açaí Gourmet.jpg" alt="Açaí Gourmet" loading="lazy" />
+          <div class="featured-info">
+            <span>Escolha refrescante</span>
+            <h3>Açaí Gourmet</h3>
+            <p>Açaí cremoso servido com banana, granola e mel para completar.</p>
+            <div class="featured-stars" aria-label="5 de 5 estrelas">★★★★★</div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="promo section" id="promo">
+      <div class="promo-card reveal-up">
+        <div class="promo-copy">
+          <span>Promoções</span>
+          <h2>Promoções imperdíveis toda semana!</h2>
+          <p>Ganhe descontos exclusivos e devolva o sabor a cada encontro.</p>
+          <div class="countdown" id="countdown">
+            <div><strong id="days">00</strong> Dias</div>
+            <div><strong id="hours">00</strong> Horas</div>
+            <div><strong id="minutes">00</strong> Min</div>
+            <div><strong id="seconds">00</strong> Seg</div>
+          </div>
+          <a class="btn btn-primary pulse" href="#contact">Veja Promoções</a>
+        </div>
+        <div class="promo-visual"></div>
+      </div>
+    </section>
+
+    <section class="gallery section" id="gallery">
+      <div class="section-head reveal-up">
+        <p>Galeria</p>
+        <h2>Momentos doces em cada clique</h2>
+      </div>
+      <div class="gallery-grid">
+        <img src="img/Açaí Gourmet.jpg" alt="Galeria sorvete 6" class="gallery-item reveal-up" loading="lazy" />
+        <img src="img/Galeria1.jpg" alt="Galeria sorvete 1" class="gallery-item reveal-up" loading="lazy" />
+        <img src="img/Galeria2.jpg" alt="Galeria sorvete 2" class="gallery-item reveal-up" loading="lazy" />
+      </div>
+    </section>
+
+    <section class="about section" id="about">
+      <div class="about-grid container">
+        <div class="about-media reveal-left">
+          <div class="about-image"></div>
+        </div>
+        <div class="about-copy reveal-right">
+          <span class="brand-pink">Sobre a Duda Mix</span>
+          <h2>Uma experiência mágica feita para apaixonados por sorvetes</h2>
+          <p>
+            A DUDA MIX nasceu para elevar o universo das sobremesas com ingredientes
+            selecionados, produção totalmente artesanal e muita paixão em cada
+            detalhe.
+          </p>
+
+          <div class="about-icons">
+            <div class="about-item">
+              <span>✔</span>
+              <div>
+                <h4>Ingredientes selecionados</h4>
+                <p>Qualidade e frescor em cada receita.</p>
+              </div>
+            </div>
+
+            <div class="about-item">
+              <span>✔</span>
+              <div>
+                <h4>Atendimento de qualidade</h4>
+                <p>Experiência acolhedora do início ao fim.</p>
+              </div>
+            </div>
+
+            <div class="about-item">
+              <span>✔</span>
+              <div>
+                <h4>Ambiente familiar</h4>
+                <p>Momentos para compartilhar com quem ama.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="reviews section" id="reviews">
+      <div class="section-head reveal-up">
+        <p>Avaliações</p>
+        <h2>Clientes que adoram cada colherada</h2>
+      </div>
+      <div class="reviews-carousel reveal-up">
+        <article class="review-card floating">
+          <div class="review-top">
+            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=200&q=80"
+              alt="Cliente 1" />
+            <div>
+              <h4>Larissa Souza</h4>
+              <div class="stars">★★★★★</div>
+            </div>
+          </div>
+          <p>O melhor sorvete da cidade, perfeito para momentos em família.</p>
+        </article>
+        <article class="review-card floating delay">
+          <div class="review-top">
+            <img src="https://images.unsplash.com/photo-1544723795-3fb6469f5b39?auto=format&fit=crop&w=200&q=80"
+              alt="Cliente 2" />
+            <div>
+              <h4>Mateus Lima</h4>
+              <div class="stars">★★★★★</div>
+            </div>
+          </div>
+          <p>Sabores incríveis e apresentação impecável. Recomendo demais!</p>
+        </article>
+        <article class="review-card floating">
+          <div class="review-top">
+            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=200&q=80"
+              alt="Cliente 3" />
+            <div>
+              <h4>Camila Pereira</h4>
+              <div class="stars">★★★★★</div>
+            </div>
+          </div>
+          <p>Experiência premium, decoração linda e sorvetes deliciosos.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="contact section" id="contact">
+      <div class="section-head reveal-up">
+        <p>Contato</p>
+        <h2>Fale conosco e peça sua sobremesa agora</h2>
+      </div>
+      <div class="contact-grid container">
+        <div class="contact-info reveal-left">
+          <div class="info-card glass-card">
+            <h3>Endereço</h3>
+            <p>Rua do Sorvete, 123 - Centro, São Paulo</p>
+          </div>
+          <div class="info-card glass-card">
+            <h3>Telefone</h3>
+            <p>(93) 98407-5238</p>
+          </div>
+          <div class="info-card glass-card">
+            <h3>WhatsApp</h3>
+            <p>+55 93 98407-5238</p>
+          </div>
+          <div class="info-card glass-card">
+            <h3>Instagram</h3>
+            <p>@dudamix_oficial</p>
+          </div>
+        </div>
+        <form class="contact-form reveal-right" id="contactForm" action="contact.php" method="POST">
+          <input type="text" name="name" placeholder="Seu nome" required />
+          <input type="email" name="email" placeholder="Seu e-mail" required />
+          <input type="tel" name="phone" placeholder="Seu telefone" required />
+          <textarea name="message" rows="5" placeholder="Sua mensagem" required></textarea>
+          <button class="btn btn-primary" type="submit">Enviar Mensagem</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner container">
+      <div>
+        <a class="brand" href="#hero">
+          <img src="img/DUDAMIX-Página Inicial.png" alt="DUDA MIX - Página Inicial" class="logo">
+        </a>
+        <p>© 2026 DUDA MIX. Todos os direitos reservados.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#menu">Cardápio</a>
+        <a href="#promo">Promoções</a>
+        <a href="#contact">Contato</a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="lightbox" id="lightbox">
+    <img class="lightbox-img" src="" alt="Foto ampliada" />
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
